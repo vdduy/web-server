@@ -95,3 +95,13 @@ server {
     }
 }
 
+vi /etc/nginx/conf.d/mysite.conf
+...
+# set client body size to 50M
+client_max_body_size 50M;
+
+vi /etc/php.ini
+upload_max_filesize = 50M
+post_max_size = 50M
+max_execution_time = 300
+
