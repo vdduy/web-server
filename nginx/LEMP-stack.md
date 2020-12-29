@@ -28,7 +28,7 @@ yum --disablerepo="*" --enablerepo="remi-safe" list php[7-9][0-9].x86_64
 
 yum-config-manager --enable remi-php80
 
-yum install php php-mysqlnd php-fpm
+yum install php php-mysqlnd php-cli php-fpm php-mysql php-json php-opcache php-mbstring php-xml php-gd php-curl
 
 php --version
 
